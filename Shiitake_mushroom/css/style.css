@@ -46,7 +46,7 @@ header p {
 .intro-section {
     padding: 0 20px;
     background-color: #ffd67a;
-    min-height: 100dvh;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@ header p {
     color: #ff4d79;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 }
 
 .menu-section h2::before {
@@ -237,6 +237,7 @@ footer {
         font-size: 3rem;
         font-weight: bold;
         padding-bottom: 50px;
+        margin-top: 10px;
     }
 
     .nav-section {
@@ -364,15 +365,21 @@ footer {
         margin-bottom: 20px;
     }
 
+    .menu-section h2 {
+        margin-bottom: 10px;
+    }
+
     .menu-section h2::before {
         content: '';
-        position: absolute;
-        left: 0;
-        top: -50px;
+        display: block;
         width: 80px;
-        height: 55px;
+        height: 50px;
         background-image: url(../image/img03.png);
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: -20px;
+        margin-bottom: -5px;
     }
 
     .intro-section p {
@@ -385,7 +392,7 @@ footer {
         flex-direction: column;
         padding: 0 20px;
         background-color: #ffeb66;
-        height: 100dvh;
+        height: 100vh;
         text-align: center;
     }
 
