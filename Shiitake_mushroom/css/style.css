@@ -16,6 +16,9 @@ body {
     background-image: url("../image/33458877_m.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -76,22 +79,24 @@ header p {
 }
 
 .menu-section h2 {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     color: #ff4d79;
     font-size: 3rem;
     font-weight: bold;
-    text-align: left;
+    margin-bottom: 50px;
 }
 
 .menu-section h2::before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: -55px;
+    display: block;
     width: 100px;
     height: 70px;
     background-image: url(../image/img03.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -10px;
 }
 
 
