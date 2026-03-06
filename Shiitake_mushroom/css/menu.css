@@ -7,15 +7,12 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* 中身を縦に並べる */
     justify-content: center;
-    /* 垂直方向（上下）の中央 */
     align-items: center;
 }
 
 .intro-section h2 {
     color: #ff4d79;
-    /* ピンクがかった赤 */
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -37,9 +34,7 @@
 
 .gallery {
     display: grid;
-    /* 4列に分割。各列の幅を均等にする */
     grid-template-columns: repeat(6, 1fr);
-    /* 隙間の設定 */
     gap: 10px;
     max-width: 1000px;
     margin: 0 auto;
@@ -47,11 +42,8 @@
 
 .gallery-item {
     width: 100%;
-    /* 画像の縦横比を固定（例：1対1の正方形） */
     aspect-ratio: 1 / 1;
-    /* 画像が歪まないように、枠内に収める設定 */
     object-fit: cover;
-    /* 角を少し丸くすると綺麗に見えます */
     border-radius: 8px;
 }
 
